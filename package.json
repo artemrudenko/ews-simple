@@ -1,6 +1,6 @@
 {
   "name": "ews-simple",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "This package gives you an API to simplify work with ExchageWebService.",
   "scripts": {
     "build": "npm run clean && npm run dev",
