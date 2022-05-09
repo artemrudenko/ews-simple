@@ -1,34 +1,32 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
-    "inlineSources": true,
+    "target": "es6",
     "module": "CommonJS",
-    "moduleResolution": "node",
+    // "moduleResolution": "node",
+    "declaration": false,
+    "noEmit": true,
+    "outDir": "build/output/node",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "noLib": false,
+    "strict": false,
+    "skipLibCheck": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "types": [
-      "node",
-      "jest"
-    ],
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "outDir": "./dist",
-    "target": "es2020",
+    "allowUnreachableCode": true,
+    "pretty": false,
     "sourceMap": true,
-    "strict": true,
+    "stripInternal": true,
+    "lib": ["es2015", "es2016", "dom"],
+    "typeRoots": ["typings", "node_modules/@types"]
   },
-  "include": [
-    "src",
-    "index.ts"
-  ],
+  "compileOnSave": false,
   "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
+      "node_modules",
+    "projects",
+    "build",
+    "src/js/System.d.ts",
+    "typings/ExchangeWebService.d.ts",
+    "src/js/Microsoft.Exchange.WebServices.d__.ts"
   ]
 }
