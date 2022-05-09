@@ -20,7 +20,7 @@ export class FindItemsResultBuilder {
   _basePropertySet = ews.BasePropertySet.FirstClassProperties;
   _looupPropertySet = new ews.PropertySet(this._basePropertySet);
   _takeN = 1000;
-  _offset: number = 0;
+  _offset = 0;
   _offsetBasePoint: ews.OffsetBasePoint = ews.OffsetBasePoint.Beginning;
   _querystring = 'isread:true';
   _readPropertySet = new ews.PropertySet(this._basePropertySet, [ews.ItemSchema.Attachments, ews.ItemSchema.HasAttachments, ews.EmailMessageSchema.Body]);

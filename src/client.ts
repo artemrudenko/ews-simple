@@ -60,7 +60,7 @@ export class ClientBuilder {
   build() {
     debug("Configuring service...");
     const service = new ews.ExchangeService(this._version);
-    if (!!this._token) {
+    if (this._token) {
       service.Credentials = new ews.OAuthCredentials(this._token);
     } else if (!!this._user && !!this._pwd) {
       service.Credentials = new ews.WebCredentials(this._user, this._pwd);
