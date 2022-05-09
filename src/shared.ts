@@ -6,20 +6,20 @@ export interface IEWSConfig {
   pwd?: string;
   token?: string;
   to?: string[];
-};
+}
 
 export enum FolderEnum {
   Inbox = WellKnownFolderName.Inbox,
   Favorites = WellKnownFolderName.Favorites,
   Sent = WellKnownFolderName.SentItems
-};
+}
 
 export interface SearchResult {
   subject: string;
   received: string;
   body: string | MessageBody;
   attachments?: { [key: string]: string }
-};
+}
 
 export enum ClientVersion {
   Exchange2010 = ExchangeVersion.Exchange2010,

@@ -1,6 +1,6 @@
 import * as path from "path";
 
-import { EmailMessageBuilder, ClientBuilder, FindItemsResultBuilder, FolderEnum } from "../lib";
+import { EmailMessageBuilder, ClientBuilder, FindItemsResultBuilder, FolderEnum } from "../src";
 
 const service = new ClientBuilder()
   .build();
